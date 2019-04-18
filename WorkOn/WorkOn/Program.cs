@@ -26,9 +26,13 @@ namespace WorkOn
 
             st2.insert(2, "Katq Noa");
             st3.insert(3, "Will Sm");
-
+            Console.WriteLine(Student.uni);
+            Student.uni = "VTU-1";
+            Console.WriteLine(Student.uni);
             st2.display();
             st3.display();
+
+            Console.WriteLine("Counts of students: " + Student.count);
 
 
         }

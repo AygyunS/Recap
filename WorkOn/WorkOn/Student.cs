@@ -11,12 +11,15 @@ namespace WorkOn
     {
         public int id;
         public String name;
+        public static String uni = "VTU";
+        public static int count = 0;
 
         public Student(int i, String n)
         {
-            id = i;
-            name = n;
+            this.id = i;
+            this.name = n;
             Console.WriteLine("New student was registed");
+            count++;
         }
         ~Student()
         {

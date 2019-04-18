@@ -12,3 +12,10 @@ C:\Users\Administrator\Downloads\Recap-20190417T062458Z-001\Recap\WorkOn\WorkOn\
 C:\Users\Administrator\Downloads\Recap-20190417T062458Z-001\Recap\WorkOn\WorkOn\bin\Debug\WorkOn.pdb
 C:\Users\Administrator\Downloads\Recap-20190417T062458Z-001\Recap\WorkOn\WorkOn\obj\Debug\WorkOn.csprojAssemblyReference.cache
 C:\Users\Administrator\Downloads\Recap-20190417T062458Z-001\Recap\WorkOn\WorkOn\obj\Debug\WorkOn.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Documents\GitHub\Recap\WorkOn\WorkOn\bin\Debug\WorkOn.exe.config
+C:\Users\Administrator\Documents\GitHub\Recap\WorkOn\WorkOn\bin\Debug\WorkOn.exe
+C:\Users\Administrator\Documents\GitHub\Recap\WorkOn\WorkOn\bin\Debug\WorkOn.pdb
+C:\Users\Administrator\Documents\GitHub\Recap\WorkOn\WorkOn\obj\Debug\WorkOn.csprojAssemblyReference.cache
+C:\Users\Administrator\Documents\GitHub\Recap\WorkOn\WorkOn\obj\Debug\WorkOn.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Documents\GitHub\Recap\WorkOn\WorkOn\obj\Debug\WorkOn.exe
+C:\Users\Administrator\Documents\GitHub\Recap\WorkOn\WorkOn\obj\Debug\WorkOn.pdb
