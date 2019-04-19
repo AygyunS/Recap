@@ -43,14 +43,14 @@ namespace WorkOn
             }
             set
             {
-                pod = name +  " - " + value + " POD";
+                pod = name + " - " + value + " POD";
             }
         }
 
         public void insert(int i, String n)
         {
-            id = i;
-            name = n;
+            this.id = i;
+            this.name = n;
         }
         public void display()
         {
@@ -61,6 +61,13 @@ namespace WorkOn
     {
         public Programmer(int id, string name)
             : base(id, name)
+        {
+
+        }
+    }
+    class UsersAdd
+    {
+        public UsersAdd()
         {
 
         }
