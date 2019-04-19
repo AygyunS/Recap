@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace WorkOn
 {
 
-    public class Student
+    class Student
     {
         public int id;
         public String name;
@@ -15,8 +15,10 @@ namespace WorkOn
         private static int count;
         private string pod;
 
-        public Student()
+        public Student(int i, String n)
         {
+            this.id = i;
+            this.name = n;
             Console.WriteLine("New student was registed");
             count++;
         }
@@ -55,13 +57,12 @@ namespace WorkOn
             System.Console.WriteLine(id + " - " + name);
         }
     }
-    
     class Programmer : Student
     {
-        public Programmer()
+        public Programmer(int id, string name)
+            : base(id, name)
         {
-            Console.WriteLine("New Prog.");
+
         }
     }
-    
 }

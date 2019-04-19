@@ -17,13 +17,10 @@ namespace WorkOn
             //Console.WriteLine();
             //Console.WriteLine();
 
-            Student st1 = new Student();
-           Student st2 = new Student();
-            Student st3 = new Student();
+            Student st1 = new Student(1, "John Snow");
+            Student st2 = new Student(2, "Katq Noa1");
+            Student st3 = new Student(3, "Will Sm1");
 
-            st1.insert(1, "asdasd");
-            st2.insert(2, "Katq Noa");
-            st3.insert(3, "2312 Noa");
 
             st1.display();
 
@@ -42,9 +39,7 @@ namespace WorkOn
 
             Console.WriteLine("Counts of students: " + Student.Count);
 
-            Programmer pr1 = new Programmer();
-            pr1.insert(1, "NE");
-
+            Programmer pr1 = new Programmer(4, "Joe");
             pr1.display();
 
 
