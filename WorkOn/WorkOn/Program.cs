@@ -32,7 +32,16 @@ namespace WorkOn
             st2.display();
             st3.display();
 
-            Console.WriteLine("Counts of students: " + Student.count);
+            st1.Pod = "DEV";
+
+            Console.WriteLine(st1.Pod);
+
+
+            Console.WriteLine("Counts of students: " + Student.Count);
+
+            Programmer pr1 = new Programmer(4, "Joe");
+            pr1.display();
+
 
 
         }

@@ -12,7 +12,8 @@ namespace WorkOn
         public int id;
         public String name;
         public static String uni = "VTU";
-        public static int count = 0;
+        private static int count;
+        private string pod;
 
         public Student(int i, String n)
         {
@@ -21,18 +22,54 @@ namespace WorkOn
             Console.WriteLine("New student was registed");
             count++;
         }
+
         ~Student()
         {
             Console.WriteLine("Destructor");
         }
+        public static int Count
+        {
+            get
+            {
+                return count;
+            }
+        }
+
+        public string Pod
+        {
+            get
+            {
+                return pod;
+            }
+            set
+            {
+                pod = name + " - " + value + " POD";
+            }
+        }
+
         public void insert(int i, String n)
         {
-            id = i;
-            name = n;
+            this.id = i;
+            this.name = n;
         }
         public void display()
         {
             System.Console.WriteLine(id + " - " + name);
+        }
+    }
+    class Programmer : Student
+    {
+        public Programmer(int id, string name)
+            : base(id, name)
+        {
+
+        }
+    }
+    class UsersAdd
+    {
+        public UsersAdd()
+        {
+
         }
     }
 }
