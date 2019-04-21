@@ -17,31 +17,52 @@ namespace WorkOn
             //Console.WriteLine();
             //Console.WriteLine();
 
-            Student st1 = new Student(1, "John Snow");
-            Student st2 = new Student(2, "Katq Noa1");
-            Student st3 = new Student(3, "Will Sm1");
+            //Student st1 = new Student(1, "John Snow");
+            //Student st2 = new Student(2, "Katq Noa1");
+            //Student st3 = new Student(3, "Will Sm1");
 
 
-            st1.display();
+            //st1.display();
 
-            st2.insert(2, "Katq Noa");
-            st3.insert(3, "Will Sm");
-            Console.WriteLine(Student.uni);
-            Student.uni = "VTU-1";
-            Console.WriteLine(Student.uni);
-            st2.display();
-            st3.display();
+            //st2.insert(2, "Katq Noa");
+            //st3.insert(3, "Will Sm");
+            //Console.WriteLine(Student.uni);
+            //Student.uni = "VTU-1";
+            //Console.WriteLine(Student.uni);
+            //st2.display();
+            //st3.display();
 
-            st1.Pod = "DEV";
+            //st1.Pod = "DEV";
 
-            Console.WriteLine(st1.Pod);
+            //Console.WriteLine(st1.Pod);
 
 
-            Console.WriteLine("Counts of students: " + Student.Count);
+            //Console.WriteLine("Counts of students: " + Student.Count);
 
-            Programmer pr1 = new Programmer(4, "Joe");
-            pr1.display();
+            //Programmer pr1 = new Programmer(4, "Joe");
+            //pr1.display();
 
+            Animal whis = new Animal()
+            {
+                Name = "Whis",
+                Sound = "Meow"
+            };
+
+            Dog grov = new Dog()
+            {
+                Name = "Grov",
+                Sound = "Woof",
+                sound2 = "GRR"
+            };
+
+            grov.Sound = "Woof";
+
+            whis.MakeSound();
+            grov.MakeSound();
+
+
+
+            Console.ReadLine();
 
 
         }

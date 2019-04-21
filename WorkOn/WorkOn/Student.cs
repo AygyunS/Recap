@@ -15,6 +15,11 @@ namespace WorkOn
         private static int count;
         private string pod;
 
+        public Student()
+        {
+
+        }
+
         public Student(int i, String n)
         {
             this.id = i;
