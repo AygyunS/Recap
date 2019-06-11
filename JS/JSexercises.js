@@ -25,3 +25,6 @@ function getDay(){
     return "Today is: " + day;
 }
 console.log(getDay());
+
+var double = num => num*2;
+console.log(double(4));

@@ -27,4 +27,5 @@ console.log(today);
 today = dd+'/'+mm+'/'+yyyy;
 console.log(today);
 
-
+var num = new Number(2);
+console.log(num.toString());
