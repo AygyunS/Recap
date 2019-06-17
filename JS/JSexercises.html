@@ -3,22 +3,29 @@
 <head>
   <title></title>
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
   
 </head>
 <body>
   <button id="but">Hide</button>
   <button id="add">Add</button>
   <button id="css">Change</button>
+  <button id="buttonChange">Chnage buttons</button>
+  <button id="normalButton">Normal buttons</button>
+
+
 
   <ol>
-      <li>
-          Item 1
-      </li>
-      <li>
-          Item 2
-      </li>
+      <li class="list-group-item list-group-item-success">This is a success list group item</li>
   </ol>
   <script type="text/javascript">
+    $('#buttonChange').click(function() {
+      $('button').addClass("btn btn-info");
+    })
+    $('#normalButton').click(function() {
+      $('button').removeClas("btn btn-info");
+    })
     $('#but').click(function()
     {
         $('ol li:last').remove();
@@ -29,13 +36,11 @@
     
     $('#add').click(function()
     {
-        $("ol").append("<li>Item 1</li>").addClass("added").css("background-color", "red");
-
+        $("ol").append("<li>Item 1</li>").css("background-color", "orange");
+        $("ol li").addClass("list-group-item list-group-item-success");
     }); 
-    $('#css').click(function()
-    {
-        $(".added").css("background-color", "orange");
-    });
+    
+
   </script>
 </body>
 </html>
