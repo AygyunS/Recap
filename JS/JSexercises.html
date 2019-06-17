@@ -22,9 +22,12 @@
   <script type="text/javascript">
     $('#buttonChange').click(function() {
       $('button').addClass("btn btn-info");
-    })
+    });
     $('#normalButton').click(function() {
-      $('button').removeClas("btn btn-info");
+      $('button').removeClass("btn btn-info");
+    })
+    $('#css').click(function() {
+        $('ol').css("background-color", "green");
     })
     $('#but').click(function()
     {
