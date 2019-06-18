@@ -4,21 +4,28 @@
   <title></title>
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+  <style type="text/css"> 
+      #window li{
+        margin: 0 auto;
+        width: 90%;
+      }
+  </style>
   
 </head>
 <body>
-  <button id="but">Hide</button>
+  <button id="but">Delete</button>
   <button id="add">Add</button>
   <button id="css">Change</button>
   <button id="buttonChange">Chnage buttons</button>
   <button id="normalButton">Normal buttons</button>
 
 
+  <div id="window">
+      <ol>
+          <li class="list-group-item list-group-item-success">This is a success list group item</li>
+      </ol>
+  </div>
 
-  <ol>
-      <li class="list-group-item list-group-item-success">This is a success list group item</li>
-  </ol>
   <script type="text/javascript">
     $('#buttonChange').click(function() {
       $('button').addClass("btn btn-info");
@@ -42,7 +49,7 @@
         $("ol").append("<li>Item 1</li>").css("background-color", "orange");
         $("ol li").addClass("list-group-item list-group-item-success");
     }); 
-    
+        
 
   </script>
 </body>
