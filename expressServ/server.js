@@ -18,6 +18,10 @@ app.get("/new", function(req, res) {
   res.send("Hello I'm Aygyun! This is new page...");
 });
 
+app.get("/hobbies", function(req, res) {
+  res.send("<ul><li>Coffe</li><li>Code</li><li>Beer</li></ul>");
+})
+
 app.listen(3000, function() {
   console.log("Server started on port 3000");
 });
