@@ -1,22 +1,39 @@
-var arr = [1,2,3,4,5,6,7,8,9,10];
 
-/*arr.getLastElement = function () {
-	console.log(arr.reverse()[0]);
-	arr.reverse();
+const workers = {
+  weight: 120,
+  experience: 20,
+  bloodAlcoholLevel: 200,
+  handsShaking: true,
+  printData : function() {
+    if(this.handsShaking == true){
+      this.bloodAlcoholLevel += 0.1 * this.weight * this.experience;
+      this.handsShaking = false;
+    }
+    console.log(workers);
+  }
 }
-arr.getLastElement();
+//console.log(workers.printData());
 
-function calcAggregates(arr) {
-		console.log("Sum = " + arr.reduce((a,b) => a + b));
-		console.log("Min = " + arr.reduce((a,b) => Math.min(a,b)));
-		console.log("Max = " + arr.reduce((a,b) => Math.max(a,b)));
-		console.log("Product = " + arr.reduce((a,b) => a * b));
-		console.log("Join = " + arr.reduce((a,b) => '' + a + b));
+let fatherCar = {
+  brand: 'BMW',
+  model: 'X5', color: 'blue',
 
-}
-calcAggregates(arr);
-*/
+  toString: function() {
+     return `[brand: ${this.brand}, model: ${this.model},color: ${this.color}]`;
+   }
+};
+console.log('' + fatherCar);
 
+let myCar = Object.create(fatherCar);
+myCar.model = 'M4';
+myCar.color = 'red';
+console.log('' + myCar);
+
+myCar.model = "New M4";
+console.log('' + fatherCar);
+console.log('' + myCar);
+
+/*
 function oddAndEven(arr){
 	for (var i = 0; i < arr.length; i++) {
 		if (i % 2=0) {
@@ -43,3 +60,4 @@ function oddAndEven(arr){
         }
     }
 }
+*/
