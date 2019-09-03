@@ -1,7 +1,7 @@
 var mongoose = require('mongoose');
 
 var todoSchema = new mongoose.Schema({
-    name: {type: String, default: 'hahaha'},
+    name: {type: String, require:'name needed!'},
     completed: {
         type: Boolean,
         default: false
