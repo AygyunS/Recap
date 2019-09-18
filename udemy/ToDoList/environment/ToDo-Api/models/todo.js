@@ -1,17 +1,20 @@
-var mongoose = require('mongoose');
+var mongoose = require("mongoose") ;
 
 var todoSchema = new mongoose.Schema({
-    name: {type: String, require:'name needed!'},
-    completed: {
-        type: Boolean,
-        default: false
-    },
-    created_data: {
-        type: Date,
-        default: Date.now
+    name : {
+        type : String ,
+        required : "Name cannot be blank"
+    } ,
+    completed : {
+        type : Boolean ,
+        default : false
+    } ,
+
+    created_at : {
+        type : Date ,
+        default : Date.now
     }
-});
+})
+var Todo = mongoose.model('Todo' , todoSchema) ;
 
-var Todo = mongoose.model('Todo', todoSchema);
-
-module.exports = Todo;
+module.exports = Todo ; 

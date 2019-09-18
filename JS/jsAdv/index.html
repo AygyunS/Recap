@@ -6,34 +6,39 @@
   <title>DOM</title>
 </head>
 <body>
-  <table border="1">
+  <input type="text" id="timeInput">
+  <button onclick="getTime()">Time</button>
+  <button onclick="stopTime()">Stop timer</button>
+    <br>
+  <input type="text" id="time" style="border:3px solid blue; text-align:center; font-size:2em;"
+  disabled="true"/>
 
-<tr><th>Name</th><th>Town</th></tr>
-
-<tr><td>Eve</td><td>Sofia</td></tr>
-
-<tr><td>Nick</td><td>Varna</td></tr>
-
-<tr><td>Didi</td><td>Ruse</td></tr>
-
-<tr><td>Tedy</td><td>Varna</td></tr>
-</table>
-
-
-<button onclick="colorizeRows()">Colorize</button>
 <script>
-  function colorizeRows() {
-    let rows = document.querySelectorAll("table tr");
-    let index = 0;
 
-    for (let row of rows) {
-        index++;
-        if (index % 2 == 0)
-          row.style.background = "teal";
-        }
+  function stopTime(){
+      let box = document.getElementById('time');
+      st = false;
+      getTime(st);
+      box.value = 0;
+
   }
 
-  
+  function getTime(st){
+
+    let timeInfo = document.getElementById("timeInput").value;
+  function countdown(startTime,st) {
+      if(st){
+      let time = startTime;
+      let box = document.getElementById('time');
+      let intervalID = setInterval(decrement, 1000);
+      function decrement() {
+        time--;
+        box.value = Math.trunc(time / 60) + ':' + ("0" + (time % 60)).slice(-2);
+      }
+      }
+  }
+  countdown(timeInfo);
+}
 </script>
 
 

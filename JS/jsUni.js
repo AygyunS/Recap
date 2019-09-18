@@ -28,6 +28,7 @@ let myCar = Object.create(fatherCar);
 myCar.model = 'M4';
 myCar.color = 'red';
 console.log('' + myCar);
+ 
 
 myCar.model = "New M4";
 console.log('' + fatherCar);
