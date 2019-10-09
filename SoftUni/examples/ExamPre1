@@ -1,0 +1,53 @@
+// JAVASCRIPT Exam preparation N1
+
+// Exaple 1:
+/*
+function solve(input){
+  let sectors = Number(input.shift());
+  let capacity = Number(input.shift());
+  let ticketPrice = Number(input.shift());
+
+
+  let totalIncome = capacity * ticketPrice;
+  let sectorIncome = totalIncome/4;
+
+  let charity = (totalIncome - (sectorIncome*0.75))/8;
+
+  console.log(`Total income - ${totalIncome.toFixed(2)} BGN` + '\n' + `Money for charity - ${charity.toFixed(2)} BGN`);
+
+}
+
+solve([4,5000,5]);
+solve([8,10000,3.25,8]);
+*/
+
+//Example 2:
+/*
+function solve(input){
+  let fanName = String(input.shift());
+  let buget = Number(input.shift());
+  let bottleBear = Number(input.shift());
+  let chips = Number(input.shift());
+
+
+
+  let bearBought = bottleBear * 1.2;
+  let chipsPrice = bearBought*0.45;
+
+  let chipsBought = Math.ceil(chips * chipsPrice);
+
+  let totalCost = bearBought + chipsBought
+
+  if(totalCost < buget){
+    buget -= totalCost;
+    console.log(`${fanName} bought a snack and has ${buget.toFixed(2)} leva left.`);
+  }
+  else {
+    totalCost -= buget;
+    console.log(`${fanName} needs ${totalCost.toFixed(2)} more leva!`);
+  }
+}
+
+solve(["George",10,2,3]);
+solve(["Valetin",5,2,4]);
+*/
